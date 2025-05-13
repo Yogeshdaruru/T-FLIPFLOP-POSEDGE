@@ -28,15 +28,47 @@ From the above characteristic table, we can directly write the next state equati
 
 **Procedure**
 
-/* write all the steps invloved */
+/*1.Type the program in Quartus software to implement the T Flip-Flop with positive edge-triggered clock using Verilog.
+
+2.Compile and run the program to check for any errors.
+
+3.Generate the RTL schematic to observe the generated logic circuit and save it for documentation.
+
+4.Create input (T, clk) and output (Q, Q_bar) nodes in the simulation tool.
+
+5.Simulate the design to generate the timing diagram for different combinations of input write all the steps invloved */
 
 **PROGRAM**
 
-/* Program for flipflops and verify its truth table in quartus using Verilog programming. Developed by: RegisterNumber:
+/*module tflip (t, clk, rst, q);
+
+input t, clk, rst;
+
+output reg q;
+
+always @(posedge clk or posedge rst)
+
+begin
+
+if (rst) q <= 0; // Reset the flip-flop else if (t==0) q <= q; else q<=~q; end
+
+endmodule
+
+Program for flipflops and verify its truth table in quartus using Verilog programming.
+
+Developed by:r.mounish vamsi kumar 
+
+RegisterNumber:24003774
 */
 
 **RTL LOGIC FOR FLIPFLOPS**
 
+![Screenshot 2024-12-28 091726](https://github.com/user-attachments/assets/df10e399-470a-41ff-8b9c-17c4f7cb8215)
+
+
 **TIMING DIGRAMS FOR FLIP FLOPS**
 
-**RESULTS**
+![Screenshot 2024-12-28 091739](https://github.com/user-attachments/assets/2566207f-8946-4e93-a262-e6141ff8de8e)
+
+
+**RESULTS Thus the given T flipflop using verilog and validating their functionality using their functional tables are verified.**
